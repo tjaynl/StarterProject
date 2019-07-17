@@ -1,5 +1,5 @@
 # Starter Project
-This is a starter project is how i like to start with a new project. This is just a collection on stuff i learned during the years.
+This is a starter project is how i like to start with a new project. This is just a collection of technics i learned during the years.
 
 
 # Requirements

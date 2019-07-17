@@ -17,6 +17,14 @@ const files = {
     jsPath: 'app/js/**/*.js'
 }
 
+// Cashbusting string variable
+const cbString = new Date().getTime();
+
+
+//
+// Functions
+//
+
 // Sass task
 function css() {
     return src(files.sassPath)
@@ -40,7 +48,6 @@ function js() {
 }
 
 // Cashebusting task
-const cbString = new Date().getTime();
 function cashBust() {
     return src(['index.html'])
         .pipe(replace(/cb=\d+/g, 'cb=' +cbString))
@@ -62,12 +69,18 @@ function watcher() {
     watch(['*.html', 'dist/css/*.css', 'dist/js/*.js']).on('change', browserSync.reload);
 }
 
-// Default task
+
+//
+// Tasks
+//
 exports.css = css;
 exports.js = js;
 exports.watcher = watcher;
 
 
+//
+// Default Task
+//
 exports.default = series(
     parallel(css, js),
     cashBust,
