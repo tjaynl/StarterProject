@@ -1,0 +1,120 @@
+//
+// Navbar
+//
+.navbar
+    padding: 15px 0
+    background-color: #222
+
+    &.fixed
+        position: fixed
+        width: 100%
+        z-index: 9999
+
+    & > *
+        align-self: center
+
+    @media only screen and (min-width: $screen--max-width)
+        display: flex
+        justify-content: space-around
+        justify-items: center
+        flex-direction: row
+
+
+.brand
+    font-size: $body-size
+    font-weight: bold
+    color: rgba(255,255,255, .8)
+    margin-left: $spacer
+    text-decoration: none
+    @media only screen and (min-width: $screen--max-width)
+        margin-left: 0
+
+
+
+
+
+
+//
+// Navbar toggle
+//
+.navbar-toggle
+    position: absolute
+    top: 0px
+    right: 0px
+    cursor: pointer
+    color: rgba(255,255,255, .8)
+    font-size: 24px
+    padding: .5em $spacer
+    @media only screen and (min-width: $screen--max-width)
+        display: none
+
+
+
+
+
+//
+// Site-nav
+//
+.site-nav
+    display: none
+    @media only screen and (min-width: $screen--max-width)
+        display: block
+
+    &__list
+
+    &__item
+        list-style: none
+
+        @media only screen and (min-width: $screen--max-width)
+            display: inline-block
+    
+    &__link
+        text-align: center
+        display: block
+        color: rgba(255,255,255, .5)
+        padding: .5em .75em
+        text-decoration: none
+
+        &:hover
+            color: rgba(255,255,255, 1)
+
+        @media only screen and (min-width: $screen--max-width)
+            padding: 0 .75em
+
+
+
+
+
+//
+// Extra-nav
+//
+.extra-nav 
+    display: none
+    text-align: center
+    margin-top: 1em
+    @media only screen and (min-width: $screen--max-width)
+        display: block
+        margin-top: 0
+
+    & > .button,
+    & > button,
+    & > input[type="submit"],
+    & > input[type="reset"],
+    & > input[type="button"]
+        font-size: 14px
+        padding: .5em 2em
+
+        &:hover
+
+        &:active
+
+
+
+
+//
+// Navbar mobile active state
+//
+.navbar
+    &.active .site-nav,
+    &.active .extra-nav
+        display: block
