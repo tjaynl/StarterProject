@@ -1,5 +1,5 @@
 # Starter Project
-This project is used for starting a new project from scratch
+This is a starter project is how i like to start with a new project. This is just a collection on stuff i learned during the years.
 
 
 # Requirements
