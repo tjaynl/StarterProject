@@ -1,4 +1,14 @@
 //
+// Grid mixin
+//
+=grid($column-count: 6, $row-count: auto, $spacer: $spacer)
+    display: grid
+    grid-template-columns: minmax($spacer, 1fr) repeat($column-count, minmax(auto, 8.313em)) minmax($spacer, 1fr)
+    grid-template-rows: $row-count
+
+
+
+//
 // Container mixin
 //
 =container($max-width: 1200px)

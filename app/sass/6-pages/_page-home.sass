@@ -2,7 +2,14 @@
 // Hero
 //
 .hero
-    /* styles */
+    background-color: #eaeaea
+    padding-top: 13.125em
+    padding-bottom: 13.125em
+
+    +grid()
+
+    h1, p
+        grid-column: 2 / 8
 
 
 
@@ -13,4 +20,10 @@
 // Section
 //
 .section
-    /* styles */
+    padding-top: 4.375em
+    padding-bottom: 4.375em
+
+    +grid()
+
+    h2, p
+        grid-column: 2 / 8

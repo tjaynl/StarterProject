@@ -3,7 +3,7 @@
 //
 .navbar
     padding: 15px 0
-    background-color: #222
+    background-color: #fff
 
     &.fixed
         position: fixed
@@ -23,7 +23,7 @@
 .brand
     font-size: $body-size
     font-weight: bold
-    color: rgba(255,255,255, .8)
+    color: rgba(0,0,0, .8)
     margin-left: $spacer
     text-decoration: none
     @media only screen and (min-width: $screen--max-width)
@@ -42,9 +42,15 @@
     top: 0px
     right: 0px
     cursor: pointer
-    color: rgba(255,255,255, .8)
-    font-size: 24px
-    padding: .5em $spacer
+    padding: 1em $spacer
+
+    span
+        display: block
+        width: 20px
+        height: 3px
+        margin: 3px 0
+        background-color: rgba(0,0,0, .8)
+
     @media only screen and (min-width: $screen--max-width)
         display: none
 
@@ -71,12 +77,12 @@
     &__link
         text-align: center
         display: block
-        color: rgba(255,255,255, .5)
+        color: rgba(0,0,0, .5)
         padding: .5em .75em
         text-decoration: none
 
         &:hover
-            color: rgba(255,255,255, 1)
+            color: rgba(0,0,0, 1)
 
         @media only screen and (min-width: $screen--max-width)
             padding: 0 .75em
